@@ -1,0 +1,14 @@
+<app-add-task
+    (onAddTask)="addTask($event)"
+></app-add-task>
+<app-tasks-item 
+    *ngFor= "let task of tasks"  
+    [task]="task"
+    (onDeleteTask)="deleteTask(task)"
+    (onToggleReminder)="toggleReminder(task)"
+> 
+<!-- [task]="task" Le asigna al atributo task del componente el valor de 
+    la variable task que recibe del ngFor 
+    (onDeleteTask) recibe la acción onDeleteTask del componente app-tasks-item
+-->
+</app-tasks-item>
