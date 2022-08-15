@@ -13,6 +13,8 @@ import { TasksItemComponent } from './tasks-item/tasks-item.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { PersonaComponent } from './persona/persona.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 
 const appRoutes: Routes = [
   {path: '', component: TasksComponent},
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     TasksItemComponent,
     AddTaskComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    PersonaComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
